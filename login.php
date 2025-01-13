@@ -7,13 +7,32 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
         <title>Login</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            html {
+                height: 100%;
+            }
+            
+            body {
+                min-height: 100%;
+            }
+            
+            body { background-color: dodgerblue; }
+
+        </style>
         
     </head>
 
     <body>
-        <div id="global" class="row justify-content-center">
-            
-            <div class="card" style="width: 18rem;">
+
+        <div id="global" class="d-flex align-items-center">
+
+            <div class="card border border-danger" style="margin: 20px auto">
 
                 <header>
                     <h1>Tela de Acesso</h1>

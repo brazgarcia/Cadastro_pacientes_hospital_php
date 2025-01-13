@@ -1,3 +1,13 @@
+<?php 
+
+    if(!isset($_SESSION["usuario_logado"])) {
+
+        header("Location: login.php");
+
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
@@ -48,8 +58,6 @@
                     
                     <label for="bairro">Bairro:</label>
                     <input type="text" name="bairro" id="bairro" required>
-
-                    
 
                     <button type="reset">Limpar</button>
                     <button type="submit">Enviar</button>
