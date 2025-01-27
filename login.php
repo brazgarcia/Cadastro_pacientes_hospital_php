@@ -12,7 +12,7 @@
             * {
                 margin: 0;
                 padding: 0;
-            }
+            } -->
 
             html {
                 height: 100%;
@@ -22,7 +22,7 @@
                 min-height: 100%;
             }
             
-            body { background-color: dodgerblue; }
+            body { background-color: green; }
 
         </style>
         
@@ -30,11 +30,11 @@
 
     <body>
 
-        <div id="global" class="d-flex align-items-center">
+        <div id="global" class="d-flex align-items-center" style="height: 1000px;">
 
-            <div class="card border border-danger" style="margin: 20px auto">
+            <div class="card border border-danger" style="margin: 20px auto;">
 
-                <header>
+                <header style="text-align: center" >
                     <h1>Tela de Acesso</h1>
                 </header>
 
@@ -44,15 +44,22 @@
                     
                     <form action="autenticador.php" method="post">
     
-                        <label for="user">Usuário:</label>
-                        <input type="text" name="user" id="user" required>
+                        <div>
+                            <label for="user">Usuário:</label>
+                            <input type="text" class="mx-2" name="user" id="user" required>
+                        </div>
+        
+                        <div class="d-flex justify-content-end">
+                            <label for="pass">Senha:</label>
+                            <input type="password" class="mx-2" name="pass" id="pass">
+                        </div>
     
-                        <label for="pass">Senha:</label>
-                        <input type="password" name="pass" id="pass">
-    
-                        <button type="reset">Limpar</button>
-                        <button type="submit">Entrar</button>
-    
+                        <div class="d-flex justify-content-center mt-4"> 
+                            <button type="reset" class="btn btn-danger mx-2">Limpar</button>
+                            <button type="submit" class="btn btn-success mx-2">Entrar</button>
+                        </div>
+
+
     
                     </form> 
                     
